@@ -221,3 +221,4 @@ In `backend/server.js`:
   setting up before any real launch/marketing push).
 - Consider a rate limit or CAPTCHA-style check on `/api/session/start` if
   this gets popular — right now it's just a per-address time gate.
+# hoodie-run
