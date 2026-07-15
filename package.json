@@ -1,0 +1,25 @@
+{
+  "name": "hoodie-run-dapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "node compile-check.js",
+    "deploy:robinhood": "hardhat run scripts/deploy.js --network robinhood",
+    "deploy:mainnet": "hardhat run scripts/deploy.js --network mainnet",
+    "deploy:baseSepolia": "hardhat run scripts/deploy.js --network baseSepolia",
+    "deploy:polygonAmoy": "hardhat run scripts/deploy.js --network polygonAmoy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.28.6",
+    "solc": "^0.8.24"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.6.1",
+    "dotenv": "^17.4.2"
+  }
+}

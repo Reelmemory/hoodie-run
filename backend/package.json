@@ -1,0 +1,16 @@
+{
+  "name": "hoodie-run-backend",
+  "version": "1.0.0",
+  "description": "Anti-cheat run validation + EIP-712 score signer for the Dino Run dapp",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "ethers": "^6.13.0",
+    "express": "^4.19.2"
+  }
+}
