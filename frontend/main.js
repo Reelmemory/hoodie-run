@@ -93,12 +93,8 @@ function buildShareText(score) {
 els.shareBtn.addEventListener("click", () => {
   const text = buildShareText(lastScore);
   const url = CONFIG.SHARE_URL;
-  if (navigator.share) {
-    navigator.share({ text, url }).catch(() => {});
-  } else {
-    const intent = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`;
-    window.open(intent, "_blank", "noopener");
-  }
+  const intent = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`;
+  window.open(intent, "_blank", "noopener");
 });
 
 // ---- Claiming (always available — sharing is just suggested first) ----

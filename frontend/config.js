@@ -25,5 +25,5 @@ const CONFIG = {
   },
 
   // Shown on the share button / tweet intent
-  SHARE_URL: "https://example.com",
+  SHARE_URL: "https://hoodie-run-1.onrender.com",
 };

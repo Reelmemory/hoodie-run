@@ -48,7 +48,8 @@ const Game = (() => {
     const rect = canvas.parentElement.getBoundingClientRect();
     const dpr = window.devicePixelRatio || 1;
     width = Math.min(rect.width, 900);
-    height = width * 0.34;
+    const isMobile = window.innerWidth <= 640;
+    height = width * (isMobile ? 0.9 : 0.34);
     canvas.style.width = width + "px";
     canvas.style.height = height + "px";
     canvas.width = width * dpr;
