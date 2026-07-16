@@ -1,7 +1,7 @@
 // ---- Fill these in (see ../README.md) ----
 const CONFIG = {
   // Backend service (backend/server.js)
-  BACKEND_URL: "http://localhost:4000",
+  BACKEND_URL: "https://hoodie-run.onrender.com",
 
   // The existing memecoin's contract address (from Etherscan)
   MEMECOIN_ADDRESS: "0xC72c01AAB5f5678dc1d6f5C6d2B417d91D402Ba3",
